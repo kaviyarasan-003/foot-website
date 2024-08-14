@@ -1,0 +1,164 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: #f8f8f8;
+}
+header{
+    width: 100%;
+    height: 60px;
+    background: #212020;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    top: 0%;
+    position: fixed;
+}
+.container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-list{
+    display: none;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+    font-weight: 550;
+
+}
+
+
+.logo{
+    font-size: 23px;
+    padding: 25px;
+}
+
+.par{
+    width: 100%;
+    height: 550px;
+    background-image: url(image/dish-6.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 110px 0;
+}
+.par h2{
+    color:#fff;
+    font-size: 50px;
+    text-shadow: 2px 2px #FF0000;
+
+}
+.par h3{
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 2px 2px #879062;
+}
+.search-box{
+    max-width: 550px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 15px auto;
+    gap:2px
+
+}
+
+.search-box input{
+    width: 60%;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.search-box button{
+    outline: none;
+    border-radius: 5px;
+    background: rgb(206, 224, 178);
+    padding: 10px;
+    height: 35px;
+    text-align: center;
+    border: 0;
+
+}
+.recipes h1{
+    font-size: 50px;
+    font-weight: 600;
+    color:#fff;
+    text-shadow: 2px 2px #e70f0f;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    text-align: center;
+
+
+}
+
+.rec-section{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 3rem;
+    
+}
+.rec-card h2{
+    text-align: center;
+    color: darkorange;
+}
+.rec-card p{
+    text-align: justify;
+    color: black;
+    padding: 10px;
+}
+
+.rec-card a{
+    text-align: center;
+    color:#fff;
+    font-size: 1rem;
+    display: block;
+    text-decoration: none;
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    border-radius: 2px;
+    font-size:25px;
+    text-shadow: 2px 2px #947862;
+
+    
+}
+.rec-card img{
+    width: 100%;
+}
+.rec-card{
+    border: 1px solid rgb(218, 200, 200);
+    border-radius: 7px;
+}
+
+.rec-card:hover{
+    box-shadow: 10px 10px 5px rgb(99, 136, 148);
+    transform: scale(0.5,0.5);
+    transition-duration: 2s;
+}
+
+@media only screen and (min-width:717px ){
+    .menu-icon{
+        display: none;
+    }.nav-list{
+        display: block;
+    }
+}
